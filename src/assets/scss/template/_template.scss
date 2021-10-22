@@ -4,23 +4,44 @@ html,
   background: #f3f3f3 !important;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: underline;
+  font-size: 0.7rem;
+  color: black !important;
 }
 
 p {
   font-size: 0.7rem;
+  margin: 0;
 }
 
-th.menu-item {
-  margin: 0;
-  padding: 0;
+.blk-background {
+  background-color: $black;
+  color: $white;
+  padding: 0.5rem;
+}
+
+.bottom-margin {
+  margin-bottom: 0.5rem;
   a {
-    color: black !important;
-    font-size: 0.7rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
   }
 }
 
 .border-top {
   border-top: 1px solid black;
+  img {
+    width: 150px;
+    margin-top: 2rem;
+  }
 }

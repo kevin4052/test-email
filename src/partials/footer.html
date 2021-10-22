@@ -1,41 +1,44 @@
 <container>
-  <row class="border-top"></row>
-  <spacer size="10"></spacer>
-  <row>
-    <columns>
-      <p class="text-center">
-        To ensure delivery to your indox, please add
-        <a href="/#">info@email.lordandtaylor.com</a>to your address
-        book/contacts.
-      </p>
-    </columns>
-  </row>
-  <spacer size="10"></spacer>
-  <row>
-    <columns class="text-center">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, vel aperiam. Odit blanditiis provident
-        quibusdam velit inventore illo eaque possimus quidem officiis quae ut, veritatis culpa sint natus quo. 
-        Maxime itaque sint cumque, reiciendis inventore rerum odit nihil accusamus suscipit, repudiandae harum!
-        Quisquam optio ad, temporibus obcaecati aliquam ullam, tenetur aperiam facere et veritatis dolores laboriosam
-        odit iure accusamus amet odio eaque numquam sed atque. Vel, esse suscipit aut distinctio laudantium ad 
-        aperiam quam pariatur perspiciatis nostrum quis fugiat quos non, corrupti quasi modi commodi quo harum 
-        voluptatum corporis quibusdam ullam, dignissimos tempora impedit? Hic assumenda veniam ipsam fugiat fugit.</p>
-    </columns>
-  </row>
-  <row>
-    <columns></columns>
-    <columns small="11" large="11">
-        <a href="#">Privacy policy</a> | <a href="#">Terms & Conditions</a> | <a href="#">Unsubscribe</a></p>    
-    </columns>
-    <columns></columns>
-  </row>
-  <row>
-    <columns></columns>
-    <columns>
-      <p class="text-center">Lord & Taylor</p>
-      <p class="text-center">275 Madison Avenue</p>
-      <p class="text-center">New York, NY 10016</p>
-    </columns>
-    <columns></columns>
-  </row>
+    <row class="border-top">
+        <columns></columns>
+        {{#each data.partials.logos}}
+            <columns>
+                <img src={{this.img_url}} alt={{this.title}} >
+            </columns>
+        {{/each}}
+        <columns></columns>
+    </row>
+    <spacer size="10"></spacer>
+    <row>
+        <columns>
+        <p class="text-center">
+            To ensure delivery to your indox, please add
+            <a href="/#">info@email.lordandtaylor.com</a>to your address
+            book/contacts.
+        </p>
+        </columns>
+    </row>
+    <spacer size="10"></spacer>
+    <row>
+        <columns class="text-center">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, vel aperiam. Odit blanditiis provident
+            quibusdam velit inventore illo eaque possimus quidem officiis quae ut, veritatis culpa sint natus quo. 
+            Maxime itaque sint cumque, reiciendis inventore rerum odit nihil accusamus suscipit, repudiandae harum!
+            Quisquam optio ad, temporibus obcaecati aliquam ullam, tenetur aperiam facere et veritatis dolores laboriosam
+            odit iure accusamus amet odio eaque numquam sed atque. Vel, esse suscipit aut distinctio laudantium ad 
+            aperiam quam pariatur perspiciatis nostrum quis fugiat quos non, corrupti quasi modi commodi quo harum 
+            voluptatum corporis quibusdam ullam, dignissimos tempora impedit? Hic assumenda veniam ipsam fugiat fugit.</p>
+        </columns>
+    </row> 
+    <row class="collapsed footer">
+        <columns>
+            <spacer size="50"></spacer>
+            <center class="bottom-margin">
+                <a href="#">Privacy policy</a> | <a href="#">Terms & Conditions</a> | <a href="#">Unsubscribe</a></p>    
+            </center>
+            <p class="text-center">Lord & Taylor</p>
+            <p class="text-center">275 Madison Avenue</p>
+            <p class="text-center">New York, NY 10016</p>
+        </columns>
+    </row>
 </container>
