@@ -1,0 +1,40 @@
+{
+  "title": "Flavors that warm you up, inside and out",
+  "message": "Cozy up with a bowl of cheesy, saucy pasta or hearty, steamy soup. Get same-day delivery of everything you need to indulge in the comfort foods of fall.",
+  "logo": {
+    "alt": "instacart",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Instacart_logo_and_wordmark.svg/2560px-Instacart_logo_and_wordmark.svg.png"
+  },
+  "promo-img": {
+    "url": "https://ci4.googleusercontent.com/proxy/0tGylT2qjTszxrI6rdZWFfgTY-m74PqIYUk9En26EbfDP3nFAgmML39XeGTRkGiv4QYTXbTEe3X9f2UUu_kbHwv2G1WHPeIlfyOYs-YC36iCRljohxAd0q9SzN2xUf0Pr4kfU1w3Kr80=s0-d-e1-ft#https://s3.amazonaws.com/instacart-media/aULYicpXRCq1c8Jb8Pk0_primary_IMG1_600x514.jpg",
+    "alt": "tasty pasta"
+  },
+  "offer": {
+    "deal": 20,
+    "order-size": 50,
+    "expire-date": "10/24/21"
+  },
+  "links": [
+    {
+      "text": "instacart.com",
+      "url": "/#"
+    },
+    {
+      "text": "Need Help?",
+      "url": "/#"
+    },
+    {
+      "text": "Privacy Policy",
+      "url": "/#"
+    },
+    {
+      "text": "Terms of Service",
+      "url": "/#"
+    },
+    {
+      "text": "Unsubscribe",
+      "url": "/#"
+    }
+  ],
+  "example_email": "example@example.com"
+}

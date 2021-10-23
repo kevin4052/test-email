@@ -1,5 +1,5 @@
 ---
-layout: index-layout
+layout: instacart-layout
 subject: My Email Templates
 ---
 
@@ -10,8 +10,8 @@ subject: My Email Templates
         <a href="/#">
           <img
             class="title_image"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Instacart_logo_and_wordmark.svg/2560px-Instacart_logo_and_wordmark.svg.png"
-            alt="instacart"
+            src="{{instacart.logo.url}}"
+            alt="{{instacart.logo.alt}}"
           />
         </a>
       </center>
@@ -20,7 +20,8 @@ subject: My Email Templates
   <row class="banner">
     <columns>
       <p class="text-center banner_text">
-        Get $20 off your order of $50 or more*
+        Get ${{instacart.offer.deal}} off your order of
+        ${{instacart.offer.order-size}} or more*
       </p>
     </columns>
   </row>
@@ -29,9 +30,7 @@ subject: My Email Templates
       <row class="promotion_banner">
         <columns>
           <center>
-            <p class="text-center promotion_banner_text">
-              Flavors that warm you up, inside and out
-            </p>
+            <p class="text-center promotion_banner_text">{{instacart.title}}</p>
           </center>
         </columns>
       </row>
@@ -40,9 +39,7 @@ subject: My Email Templates
         <columns>
           <center>
             <p class="text-center promotion_message_text">
-              Cozy up with a bowl of cheesy, saucy pasta or hearty, steamy soup.
-              Get same-day delivery of everything you need to indulge in the
-              comfort foods of fall.
+              {{instacart.message}}
             </p>
           </center>
         </columns>
@@ -51,7 +48,7 @@ subject: My Email Templates
       <row class="promotion_action">
         <columns>
           <center>
-            <a src="#" class="button">Save $20 now</a>
+            <a src="#" class="button">Save ${{instacart.offer.deal}} now</a>
           </center>
         </columns>
       </row>
@@ -59,7 +56,8 @@ subject: My Email Templates
         <columns>
           <center>
             <p class="text-center offer_limit_text">
-              Min. order $50. Expires 10/24/21.
+              Min. order ${{instacart.offer.order-size}}. Expires
+              {{instacart.offer.expire-date}}.
             </p>
           </center>
         </columns>
@@ -68,8 +66,8 @@ subject: My Email Templates
       <row class="promo_img">
         <center>
           <img
-            src="https://ci4.googleusercontent.com/proxy/0tGylT2qjTszxrI6rdZWFfgTY-m74PqIYUk9En26EbfDP3nFAgmML39XeGTRkGiv4QYTXbTEe3X9f2UUu_kbHwv2G1WHPeIlfyOYs-YC36iCRljohxAd0q9SzN2xUf0Pr4kfU1w3Kr80=s0-d-e1-ft#https://s3.amazonaws.com/instacart-media/aULYicpXRCq1c8Jb8Pk0_primary_IMG1_600x514.jpg"
-            alt="tasty pasta"
+            src="{{instacart.offer.promo_img.url}}"
+            alt="{{instacart.offer.promo_img.atl}}"
           />
         </center>
       </row>
