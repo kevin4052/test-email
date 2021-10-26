@@ -1,75 +1,99 @@
 ---
-layout: instacart-layout
+layout: index-layout
 subject: My Email Templates
 ---
 
 <container>
-  <row class="title">
+  <row>
     <columns>
-      <center>
-        <a href="/#">
-          <img
-            class="title_image"
-            src="{{instacart.logo.url}}"
-            alt="{{instacart.logo.alt}}"
-          />
-        </a>
-      </center>
+      <p class="text-center">shop the latest</p>
     </columns>
+  </row>
+  <spacer size="50"></spacer>
+  <row>
+    <center>
+      <a href="#">View in Browser</a>
+    </center>
+  </row>
+  <row class="logo">
+    <columns>
+    <center>
+      <img src="{{data.logo_img_url}}" alt="{{data.title}}" />
+    </center>
+  </columns>
+  </row>
+  <row>
+    <columns><p class="text-center">WOMEN</p></columns>
+    <columns><p class="text-center">MEN</p></columns>
+    <columns><p class="text-center">BEAUTY</p></columns>
+    <columns><p class="text-center">HOME</p></columns>
+    <columns><p class="text-center">SALE</p></columns>
   </row>
   <row class="banner">
     <columns>
-      <p class="text-center banner_text">
-        Get ${{instacart.offer.deal}} off your order of
-        ${{instacart.offer.order-size}} or more*
-      </p>
+      <p class="text-center banner-text">FREE SHIPPING ON ORDERS OVER $99</p>
     </columns>
   </row>
-  <row class="promotion">
+  <row class="hero">
     <columns>
-      <row class="promotion_banner">
+      <row>
+        <p class="text-center">JUST DROPPED FOR HIM</p>
+      </row>
+      <row>
+        <p class="text-center">CANADA GOOSE</p>
+      </row>
+      <row>
+        <p class="text-center">
+          Embrace the great outdoors in expertly-crafted cold weather staples.
+        </p>
+      </row>
+      <row>
+        <a href="#">SHOP NOW</a>
+      </row>
+      <row>
+        <!-- <center> -->
+          <img src="https://cdn11.bigcommerce.com/s-ra8e2ndq97/images/stencil/800x800/products/712/6837/Canada_Goose_Mens_Langford_Parka__47953.1629465358.jpg?c=2"
+          alt="pic" >
+        <!-- </center> -->
+      </row>
+  </row>
+  <row class="featured">
+    <columns>
+      <row>
         <columns>
-          <center>
-            <p class="text-center promotion_banner_text">{{instacart.title}}</p>
-          </center>
+          <p class="text-center">NEW ARRIVALS</p>
         </columns>
       </row>
-
-      <row class="promotion_message">
+      <row>
         <columns>
-          <center>
-            <p class="text-center promotion_message_text">
-              {{instacart.message}}
-            </p>
-          </center>
+          <p class="text-center">FOR HER</p>
         </columns>
       </row>
-
-      <row class="promotion_action">
+      <row class="product">
         <columns>
-          <center>
-            <a src="#" class="button">Save ${{instacart.offer.deal}} now</a>
-          </center>
+          <row>
+            <columns>
+              <p class="text-center">NINE WEST</p>            
+            </columns>
+          </row>
+          <row>
+            <columns>
+              <p class="text-center">From statement pumps to seek boots.</p>            
+            </columns>
+          </row>
+          <row>
+            <columns>
+              <a href="#">SHOP NOW</a>           
+            </columns>
+          </row>
+          <row>
+            <columns>
+              <center>
+                <img scr="https://images.canadagoose.com/image/upload/w_435,c_scale,f_auto,q_auto:best/v1596211175/product-image/7024L_467.jpg" alt="knititude">
+              </center>          
+            </columns>
+          </row>
         </columns>
-      </row>
-      <row class="offer_limit">
-        <columns>
-          <center>
-            <p class="text-center offer_limit_text">
-              Min. order ${{instacart.offer.order-size}}. Expires
-              {{instacart.offer.expire-date}}.
-            </p>
-          </center>
-        </columns>
-      </row>
-
-      <row class="promo_img">
-        <center>
-          <img
-            src="{{instacart.promo-img.url}}"
-            alt="{{instacart.promo-img.atl}}"
-          />
-        </center>
       </row>
     </columns>
   </row>

@@ -11,96 +11,40 @@ p {
   margin: 0;
 }
 
-.button {
-  background: #fa7414 !important;
-  background-color: #fa7414 !important;
-  padding: 1rem 5rem !important;
-  text-align: center !important;
-  color: $black !important;
-  font-weight: bold;
-  font-size: 18px !important;
-  border: none !important;
-  border-radius: 28px !important;
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-.title {
-  &_image {
-    width: 160px;
-    margin: 1rem auto;
+.logo {
+  img {
+    width: 50%;
   }
 }
 
 .banner {
-  background-color: #fa7414;
+  background-color: $black;
+  color: $white;
   .columns {
     th {
       padding-top: 1rem;
     }
   }
-  &_text {
-    font-size: $h4-font-size;
-    font-weight: 700;
-    color: #343538;
+  &-text {
+    font-size: $h5-font-size;
+    font-weight: 200;
+    color: $white;
   }
 }
 
-.promotion {
-  .first {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    padding-bottom: 0 !important;
-  }
-
-  background-color: #ffecc4;
-  &_banner {
-    &_text {
-      font-size: 54px;
-      font-weight: 700;
-      color: #343538;
-      margin-top: 3rem;
-      margin-left: 2rem;
-      margin-right: 2rem;
-    }
-  }
-  &_message {
-    th {
-      padding: 0;
-    }
-    &_text {
-      padding: 0 2rem;
-      font-size: 18px;
-      line-height: 26px;
-      font-weight: 400;
-      color: #343538;
-      text-align: center;
-    }
-  }
-  &_action {
-    th {
-      padding-top: 1rem;
-    }
-  }
-}
-
-.offer_limit {
+.hero {
+  background-color: #8e9198 !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 1rem;
   .columns {
-    padding-bottom: 0 !important;
+    padding: 0 !important;
   }
-  &_text {
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 24px;
-    color: #343538;
+  img {
+    width: 100%;
   }
 }
 
-.promo_img {
+.featured {
   .columns {
     padding: 0 !important;
   }
