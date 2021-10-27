@@ -9,46 +9,59 @@ subject: My Email Templates
       <p class="text-center">shop the latest</p>
     </columns>
   </row>
+
   <spacer size="50"></spacer>
-  <row>
+
+  <row class="site-link">
     <center>
       <a href="#">View in Browser</a>
     </center>
   </row>
+
   <row class="logo">
     <columns>
-    <center>
-      <img src="{{data.logo_img_url}}" alt="{{data.title}}" />
-    </center>
-  </columns>
+      <center>
+        <img src="{{data.logo_img_url}}" alt="{{data.title}}" />
+      </center>
+    </columns>
   </row>
-  <row>
+
+  <row class="list">
     <columns><p class="text-center">WOMEN</p></columns>
     <columns><p class="text-center">MEN</p></columns>
     <columns><p class="text-center">BEAUTY</p></columns>
     <columns><p class="text-center">HOME</p></columns>
     <columns><p class="text-center">SALE</p></columns>
   </row>
+
   <row class="banner">
     <columns>
       <p class="text-center banner-text">FREE SHIPPING ON ORDERS OVER $99</p>
     </columns>
   </row>
+
   <row class="hero">
     <columns>
       <row>
-        <p class="text-center">JUST DROPPED FOR HIM</p>
+        <p class="text-center hero-headline">JUST DROPPED FOR HIM</p>
       </row>
       <row>
-        <p class="text-center">CANADA GOOSE</p>
+        <p class="text-center hero-title">CANADA GOOSE</p>
       </row>
       <row>
-        <p class="text-center">
-          Embrace the great outdoors in expertly-crafted cold weather staples.
-        </p>
+        <columns large="1" small="1"></columns>
+        <columns>
+          <p class="text-center hero-description">
+            Embrace the great outdoors in expertly-crafted cold weather staples.
+          </p>
+        </columns>
+        <columns large="1" small="1"></columns>
       </row>
+      <spacer size="10"></spacer>
       <row>
-        <a href="#">SHOP NOW</a>
+        <center>
+          <a class="shop-now" href="#">SHOP NOW</a>
+        </center>
       </row>
       <row>
         <!-- <center> -->
@@ -57,39 +70,42 @@ subject: My Email Templates
         <!-- </center> -->
       </row>
   </row>
+
   <row class="featured">
     <columns>
       <row>
         <columns>
-          <p class="text-center">NEW ARRIVALS</p>
+          <p class="text-center featured-title">NEW ARRIVALS</p>
         </columns>
       </row>
       <row>
         <columns>
-          <p class="text-center">FOR HER</p>
+          <p class="text-center featured-description">FOR HER</p>
         </columns>
       </row>
+      <spacer size="30"></spacer>
       <row class="product">
         <columns>
           <!-- first featured product -->
           <container>
             <row>
               <columns>
-                <p class="text-center">KNITITUDE</p>            
+                <p class="text-center product-title">KNITITUDE</p>            
               </columns>
             </row>
             <row>
               <columns>
-                <p class="text-center">Elevated everyday styles featured oh-so-soft knits</p>            
+                <p class="text-center product-description">Elevated everyday styles featured oh-so-soft knits</p>            
               </columns>
             </row>
             <row>
               <columns>
                 <center>
-                <a href="#">SHOP NOW</a>  
+                <a class="shop-now" href="#">SHOP NOW</a>  
               </center>         
               </columns>
             </row>
+            <spacer size="30"></spacer>
             <row>
               <columns>
                 <center>
@@ -98,25 +114,27 @@ subject: My Email Templates
               </columns>
             </row>
           </container>
+          <spacer size="30"></spacer>
           <!-- second featured product -->
           <container>
             <row>
               <columns>
-                <p class="text-center">NINE WEST</p>            
+                <p class="text-center product-title">NINE WEST</p>            
               </columns>
             </row>
             <row>
               <columns>
-                <p class="text-center">From statement pumps to seek boots.</p>            
+                <p class="text-center product-description">From statement pumps to seek boots.</p>            
               </columns>
             </row>
             <row>
               <columns>
                 <center>
-                <a href="#">SHOP NOW</a>  
+                <a class="shop-now" href="#">SHOP NOW</a>  
               </center>         
               </columns>
             </row>
+            <spacer size="30"></spacer>
             <row>
               <columns>
                 <center>
@@ -129,73 +147,92 @@ subject: My Email Templates
       </row>
     </columns>
   </row>
-  <row>
+
+  <spacer size="30"></spacer>
+
+  <row class="designer">
     <columns>
       <row>
         <columns>
-          <p class="text-center">THE HOME EDIT:</p>
+          <p class="text-center designer-title">THE HOME EDIT:</p>
         </columns>
       </row>
       <row>
         <columns>
-          <p class="text-center">KATE SPADE NEW YORK HOME</p>
+          <p class="text-center designer-feature">KATE SPADE NEW YORK HOME</p>
         </columns>
       </row>
       <row>
-        <columns>
-          <p class="text-center">From playful cherry print tea kettles and hors d'oeuvtres trays to polka dotted tidbit plates, bring home a touch of whimsy.</p>
+        <columns large="1" small="1"></columns>
+        <columns large="6" small="9">
+          <p class="text-center designer-description">From playful cherry print tea kettles and hors d'oeuvtres trays to polka dotted tidbit plates, bring home a touch of whimsy.</p>
         </columns>
+        <columns large="1" small="1"></columns>
       </row>
       <row>
         <columns>
           <center>
-            <a href="#">SHOP NOW</a>  
+            <a class="shop-now" href="#">SHOP NOW</a>  
           </center>         
         </columns>
       </row>
     </columns>
   </row>
+    
   <row>
-      <img src="../assets/img/summer-picnic.png"
-      alt="Kate Spade" >
+    <img src="../assets/img/summer-picnic.png"
+    alt="Kate Spade" >
   </row>
+
+  <spacer size="30"></spacer>
+
   <row class="markdown">
-    <columns>
+    <columns large="1"></columns>
+    <columns class="markdown-card" large="10">
       <row>
         <columns>
-          <p class="text-center">UP TO 70% OFF</p>
+          <p class="text-center markdown-card-deal">UP TO <span>70%</span> OFF</p>
         </columns>
       </row>
       <row>
         <columns>
-          <p class="text-center">NEW MARKDOWNS</p>
+          <p class="text-center markdown-card-title">NEW MARKDOWNS</p>
         </columns>
       </row>
       <row>
-        <columns>
-          <p class="text-center">Hundreds of new items added to the sale, hurry before they're all gone!</p>
+        <columns large="1"></columns>
+        <columns large="10">
+          <p class="text-center markdown-card-description">Hundreds of new items added to the sale, hurry before they're all gone!</p>
         </columns>
-      </row>
-      <row>
         <columns></columns>
-        <columns small="3" large="3">
+      </row>
+      <row class="markdown-card-links">
+        <columns large="2"></columns>
+        <columns large="3">
           <a href="#">WOMEN'S SALE</a>
         </columns>
         <columns></columns>
-        <columns small="3" large="3">
+        <columns large="3">
           <a href="#">MEN'S SALE</a>
         </columns>
-        <columns></columns>
+        <columns large="1"></columns>
       </row>      
     </columns>
+    <columns large="1"></columns>
   </row>
+
+  <spacer size="60"></spacer>
+
   <row>
-    <columns>
-      <center>
+    <columns large="1"></columns>
+    <columns large=10>
         <img src="../assets/img/afterpay.png" alt="afterpay" >
-      </center>
     </columns>
+    <columns large="1"></columns>
   </row>
+
+  <spacer size="30"></spacer>
+
   <row>
     <columns>
       <center>
@@ -203,6 +240,7 @@ subject: My Email Templates
       </center>
     </columns>
   </row>
+
   <row>
     <columns>
       <center>

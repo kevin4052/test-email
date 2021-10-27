@@ -2,7 +2,7 @@ body,
 html,
 .body {
   width: 100%;
-  background: $light-gray !important;
+  background: $white !important;
   background-color: $light-gray !important;
 }
 
@@ -19,14 +19,33 @@ p {
 .top {
   .columns {
     p {
+      font-size: 0.6rem !important;
+    }
+  }
+}
+
+.site-link {
+  .columns {
+    a {
       font-size: 0.75rem !important;
     }
   }
 }
 
 .logo {
-  img {
-    width: 50%;
+  .columns {
+    padding-bottom: 0 !important;
+    img {
+      width: 50%;
+    }
+  }
+}
+
+.list {
+  .columns {
+    p {
+      font-size: $h5-font-size;
+    }
   }
 }
 
@@ -55,6 +74,17 @@ p {
   img {
     width: 100%;
   }
+  &-headline {
+    font-size: $h2-font-size;
+  }
+  &-title {
+    font-size: 45px;
+  }
+}
+
+.shop-now {
+  font-size: $h6-font-size;
+  font-weight: 600 !important;
 }
 
 .featured {
@@ -64,10 +94,71 @@ p {
   img {
     width: 75%;
   }
+  &-title {
+    font-size: $h3-font-size;
+    font-weight: 700;
+  }
+  &-description {
+    font-size: $h4-font-size;
+    font-weight: 600;
+  }
+}
+
+.product {
+  p {
+    padding-bottom: 10px;
+  }
+  &-title {
+    font-size: $h3-font-size;
+  }
+}
+
+.designer {
+  &-title {
+    font-size: $h3-font-size;
+  }
+  &-feature {
+    font-size: $h3-font-size;
+    font-family: none !important;
+  }
 }
 
 .markdown {
-  background-color: #5ac2ab;
+  .row {
+    margin-bottom: 5px;
+  }
+  .columns {
+    padding: 0 !important;
+    p {
+      color: $white !important;
+    }
+  }
+  &-card {
+    background-color: #5ac2ab;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    &-deal {
+      margin-top: 10px;
+      font-size: $h3-font-size !important;
+      span {
+        font-weight: 700;
+      }
+    }
+    &-title {
+      font-size: $h1-font-size;
+      font-family: none;
+    }
+    &-links {
+      margin-top: 0.5rem !important;
+      margin-bottom: 1rem !important;
+      .columns {
+        a {
+          color: $white !important;
+          font-size: 0.9rem !important;
+        }
+      }
+    }
+  }
 }
 
 .social {
