@@ -1,45 +1,67 @@
 <container>
-    <!-- <row class="border-top">
-        <columns small="4" large="4"></columns>
-        {{#each data.partials.logos}}
-            <columns small="1" large="1">
-                <center>
-                    <img src={{this.img_url}} alt={{this.title}} >
-                </center>
-            </columns>
+  <row class="social">
+    <columns></columns>
+    <columns small="4" large="4">
+      <row>
+        {{#each footer.logos}}
+        <columns>
+          <center>
+            <img src="{{this.img_url}}" alt="{{this.title}}" />
+          </center>
+        </columns>
         {{/each}}
-        <columns small="4" large="4"></columns>
-    </row>
-    <spacer size="10"></spacer>
-    <row>
-        <columns>
-        <p class="text-center">
-            To ensure delivery to your indox, please add
-            <a href="/#">info@email.lordandtaylor.com</a>to your address
-            book/contacts.
-        </p>
-        </columns>
-    </row>
-    <spacer size="10"></spacer>
-    <row>
-        <columns class="text-center">
-            <p>*$20 Off is valid through 10/24/2021 at 11:59PM PT and is valid only in the United States for one order
-                of $50 or more with one retailer and purchased through Instacart.com, while supplies last. Discount will 
-                be applied to the total purchase price for all non-alcohol products, and excludes taxes, service fees,
-                special handling fees and/or other fees; offer cannot be applied to alcohol products. Deliveries subject 
-                to availability. In order to take advantage of this offer, customers must have a valid account on
-                Instacart.com with a valid form of accepted payment on file. Only one offer per household. Instacart 
-                reserves the right to modify or cancel this offer at any time. Offer may not be sold, copied, modified,
-                transferred or used retroactively for prior purchases. Void where restricted or prohibited by law.
-                Offer may not be combined with any other sale, promotion, discount, code, coupon, and/or offer. Offer
-                has no cash value. Instacart is not a retailer or seller. Instacart may not be available in all 
-                zip or post codes.</p>
-        </columns>
-    </row> 
-    <row class="collapsed footer">
-        <columns>
-            <p>Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc. Android, Google Play and the Google Play logo are trademarks of Google LLC. Subject to Instacart Terms of Service.
-            </p>
-        </columns>
-    </row> -->
+      </row>
+    </columns>
+    <columns></columns>
+  </row>
+
+  <spacer size="10"></spacer>
+
+  <row class="contact">
+    <columns>
+      <p class="text-center">
+        To ensure delivery to your indox, please add
+        <a href="/#">info@email.lordandtaylor.com</a>to your address
+        book/contacts.
+      </p>
+    </columns>
+  </row>
+
+  <spacer size="10"></spacer>
+
+  <row>
+    <columns class="text-center">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nisi
+        ex aliquam rerum laboriosam possimus quas assumenda praesentium nemo?
+        Tempore eaque porro accusamus, quia vero reiciendis praesentium? Neque
+        veritatis inventore cupiditate temporibus! Voluptatem mollitia nostrum
+        officia aliquam rem magni eligendi adipisci autem deserunt. Quibusdam
+        aliquid exercitationem voluptates similique enim tenetur laudantium.
+        Quasi commodi obcaecati a temporibus quas minima provident ut maxime.
+        Maxime beatae doloremque vel ipsam expedita harum, architecto voluptas
+        perferendis quidem ea? Ea, nesciunt sint eaque corrupti suscipit
+        architecto blanditiis consectetur voluptatem non, delectus nostrum
+        exercitationem quia perferendis natus laborum at beatae quibusdam! Eum
+        hic rerum placeat minima. Culpa!
+      </p>
+    </columns>
+  </row>
+
+  <row>
+    <columns>
+      <center>
+        <a href="#">Privacy Policy</a> | <a href="#">Term & Conditions</a> |
+        <a href="#">Unsubscribe</a>
+      </center>
+    </columns>
+  </row>
+
+  <row class="address">
+    <columns>
+      <row><p class="text-center">{{data.title}}</p></row>
+      <row><p class="text-center">275 Madison Avenue</p></row>
+      <row><p class="text-center">New York, NY 10016</p></row>
+    </columns>
+  </row>
 </container>

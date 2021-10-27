@@ -6,9 +6,22 @@ html,
   background-color: $light-gray !important;
 }
 
+a {
+  color: $black !important;
+  text-decoration: underline !important;
+}
+
 p {
   padding: 0;
   margin: 0;
+}
+
+.top {
+  .columns {
+    p {
+      font-size: 0.75rem !important;
+    }
+  }
 }
 
 .logo {
@@ -33,7 +46,7 @@ p {
 }
 
 .hero {
-  background-color: #8e9198 !important;
+  background-color: #d3d7d7 !important;
   padding-bottom: 0 !important;
   margin-bottom: 1rem;
   .columns {
@@ -47,5 +60,27 @@ p {
 .featured {
   .columns {
     padding: 0 !important;
+  }
+  img {
+    width: 75%;
+  }
+}
+
+.markdown {
+  background-color: #5ac2ab;
+}
+
+.social {
+  .columns {
+    padding-bottom: 0 !important;
+  }
+  img {
+    width: 50px;
+  }
+}
+
+.contact {
+  a {
+    color: #2199e8 !important;
   }
 }
