@@ -3,7 +3,8 @@ html,
 .body {
   width: 100%;
   background: $white !important;
-  background-color: $light-gray !important;
+  background-color: $white !important;
+  font-family: "Roboto", sans-serif !important;
 }
 
 a {
@@ -78,13 +79,16 @@ p {
     font-size: $h2-font-size;
   }
   &-title {
+    font-family: "Nanum Myeongjo", serif !important;
     font-size: 45px;
+    font-weight: bold;
   }
 }
 
 .shop-now {
-  font-size: $h6-font-size;
+  font-size: $global-font-size;
   font-weight: 600 !important;
+  color: $black;
 }
 
 .featured {
@@ -95,8 +99,9 @@ p {
     width: 75%;
   }
   &-title {
-    font-size: $h3-font-size;
-    font-weight: 700;
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 38px;
+    font-weight: bold;
   }
   &-description {
     font-size: $h4-font-size;
@@ -109,17 +114,27 @@ p {
     padding-bottom: 10px;
   }
   &-title {
+    font-family: "Nanum Myeongjo", serif;
     font-size: $h3-font-size;
   }
 }
 
 .designer {
+  .columns {
+    padding-bottom: 0 !important;
+  }
   &-title {
     font-size: $h3-font-size;
+    padding-bottom: 10px !important;
   }
   &-feature {
+    font-family: "Nanum Myeongjo", serif;
     font-size: $h3-font-size;
-    font-family: none !important;
+    font-weight: bold;
+    padding-bottom: 10px !important;
+  }
+  &-description {
+    padding-bottom: 10px !important;
   }
 }
 
@@ -145,33 +160,76 @@ p {
       }
     }
     &-title {
+      font-family: "Nanum Myeongjo", serif;
       font-size: $h1-font-size;
-      font-family: none;
     }
     &-links {
       margin-top: 0.5rem !important;
       margin-bottom: 1rem !important;
       .columns {
         a {
-          color: $white !important;
-          font-size: 0.9rem !important;
+          color: rgb(223, 223, 223) !important;
+          font-size: 1rem !important;
+          font-weight: bold;
         }
       }
+    }
+    &-description {
+      color: rgb(223, 223, 223) !important;
     }
   }
 }
 
+.up-sale {
+  font-size: $h4-font-size;
+}
+
+/* ======= footer ======= */
+.footer-top-spacer {
+  tr {
+    border-top: 1px solid $black;
+  }
+}
 .social {
   .columns {
     padding-bottom: 0 !important;
   }
-  img {
-    width: 50px;
+  &-icon {
+    width: 28px !important;
   }
 }
 
 .contact {
-  a {
-    color: #2199e8 !important;
+  .columns {
+    p {
+      font-size: 10px !important;
+    }
+    a {
+      color: #2199e8 !important;
+    }
+  }
+}
+
+.disclaimer {
+  .columns {
+    p {
+      font-size: 10px !important;
+    }
+  }
+}
+
+.footer-links {
+  .columns {
+    a {
+      font-size: 10px !important;
+    }
+  }
+}
+
+.address {
+  .columns {
+    p {
+      font-size: 10px !important;
+    }
   }
 }
